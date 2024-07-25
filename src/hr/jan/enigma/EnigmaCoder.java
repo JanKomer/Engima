@@ -18,7 +18,6 @@ public class EnigmaCoder {
 		String[] s = message.split("");
 		for(String s1 : s) {
 			output = output + e.encipher(s1);
-			//differecnce
 		}
 		System.out.println("Your enciphered message reads: " + output);
 	}
