@@ -31,7 +31,7 @@ public class Enigma {
 	}
 	
 	public String encipher(String letter) {
-		if(letter.equals(" ")) return letter;
+		if(letter.matches("\\p{Punct}")) return letter;
 		rotateRotors();
 		
 		int signal = k.forward(letter);
@@ -78,5 +78,12 @@ public class Enigma {
 		I.setRing(r1);
 		II.setRing(r2);
 		III.setRing(r3);
+	}
+	
+	public void reset(String key) {
+		setKey(key);
+		I.notch = 'Q';
+		II.notch = 'E';
+		III.notch = 'V';
 	}
 }
