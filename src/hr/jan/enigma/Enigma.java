@@ -31,7 +31,8 @@ public class Enigma {
 	}
 	
 	public String encipher(String letter) {
-		if(letter.matches("\\p{Punct}")) return letter;
+		if(letter.equals(" ") || letter.equals(".") || letter.equals(",") || 
+				letter.equals("!") || letter.equals("?")) return letter;
 		rotateRotors();
 		
 		int signal = k.forward(letter);
