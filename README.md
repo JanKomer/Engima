@@ -8,3 +8,5 @@ Lastly, a Ring offset is needed, used for changing the position of the Rotor not
 After that, user can input as many messages as they want. Messages that need to be deciphered are written in the same place as ones waiting enciphering.
 Note: Only English alphabet letters are allowed, as well as spaces, commas, exclamation mark, question marks and periods. ( .,!?)
 Happy spying! :)
+
+[Note:Project inspired by Coding Cassowary, and his Enigma machine.]
